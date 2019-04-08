@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--放大缩小图片-->
+    <declare-styleable name="ScaleImageView">
+        <attr name="src" format="reference"/>
+        <attr name="assetName" format="string"/>
+        <attr name="panEnabled" format="boolean"/>
+        <attr name="zoomEnabled" format="boolean"/>
+        <attr name="quickScaleEnabled" format="boolean"/>
+        <attr name="tileBackgroundColor" format="color"/>
+    </declare-styleable>
+
+    <!--自定义TabLayout属性-->
+    <declare-styleable name="TabLayout">
+        <attr name="tabIndicatorWidth" format="dimension|reference"/>
+        <attr name="tabIndicatorModel" format="enum">
+            <enum name="Line" value="0"/>
+            <enum name="Triangle" value="1"/>
+        </attr>
+    </declare-styleable>
+
+    <!--自定义标签布局-->
+    <declare-styleable name="LabelView">
+        <attr name="gravity" format="enum">
+            <enum name="LEFT" value="0"/>
+            <enum name="RIGHT" value="1"/>
+            <enum name="CENTER" value="2"/>
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="TitleBar">
+        <attr name="title_only_appbar" format="boolean"/>
+        <attr name="title_left_drawable" format="reference"/>
+        <attr name="title_right_drawable" format="reference"/>
+        <attr name="title_text" format="string"/>
+        <attr name="title_text_color" format="color"/>
+        <attr name="title_text_bold" format="boolean"/>
+        <attr name="title_statusBar_immerse" format="boolean"/>
+        <attr name="title_driver_height" format="dimension"/>
+        <attr name="title_driver_color" format="color"/>
+
+    </declare-styleable>
+
+    <declare-styleable name="ToolBar">
+        <attr name="left_drawable" format="reference"/>
+        <attr name="right_drawable" format="reference"/>
+        <attr name="text" format="string"/>
+        <attr name="text_color" format="color"/>
+        <attr name="text_bold" format="boolean"/>
+        <attr name="text_loc" format="enum">
+            <enum name="CENTER" value="0"/>
+            <enum name="LEFT" value="1"/>
+        </attr>
+        <attr name="statusBar_immerse" format="boolean"/>
+        <attr name="driver_height" format="dimension"/>
+        <attr name="driver_color" format="color"/>
+
+    </declare-styleable>
+
+    <declare-styleable name="ItemLayout">
+        <attr name="leftIcon" format="reference"/>
+        <attr name="rightIcon" format="reference"/>
+
+        <attr name="leftIconGravity" format="enum">
+            <enum name="CENTER" value="0"/>
+            <enum name="TOP" value="1"/>
+            <enum name="BOTTOM" value="2"/>
+        </attr>
+
+        <attr name="leftIconMarginLeft" format="dimension"/>
+        <attr name="rightIconMarginRight" format="dimension"/>
+
+        <attr name="titleMarginLeftIcon" format="dimension"/>
+        <attr name="subTitleMarginLeftIcon" format="dimension"/>
+        <attr name="infoMarginRightIcon" format="dimension"/>
+
+        <attr name="titleGoneMarginLeftIcon" format="dimension"/>
+        <attr name="subTitleGoneMarginLeftIcon" format="dimension"/>
+        <attr name="infoGoneMarginRightIcon" format="dimension"/>
+
+        <attr name="title" format="string"/>
+        <attr name="title_color" format="color"/>
+        <attr name="title_bold" format="boolean"/>
+        <attr name="title_size" format="dimension"/>
+
+        <attr name="subTitle" format="string"/>
+        <attr name="subTitle_color" format="color"/>
+        <attr name="subTitle_bold" format="boolean"/>
+        <attr name="subTitle_size" format="dimension"/>
+
+        <attr name="info" format="string"/>
+        <attr name="info_color" format="color"/>
+        <attr name="info_bold" format="boolean"/>
+        <attr name="info_size" format="dimension"/>
+    </declare-styleable>
+
+
+    <declare-styleable name="SubTitleView">
+        <!--左边距-->
+        <attr name="sub_leftMargin" format="dimension"/>
+        <!--右边距-->
+        <attr name="sub_rightMargin" format="dimension"/>
+        <!--左图标-->
+        <attr name="sub_leftIcon" format="reference"/>
+        <!--右图标-->
+        <attr name="sub_rightIcon" format="reference"/>
+        <!--左文本-->
+        <attr name="sub_leftText" format="string"/>
+        <!--右文本-->
+        <attr name="sub_rightText" format="string"/>
+        <!--左文本大小-->
+        <attr name="sub_leftTextSize" format="dimension"/>
+        <!--右文本大小-->
+        <attr name="sub_rightTextSize" format="dimension"/>
+        <!--左文本颜色-->
+        <attr name="sub_leftTextColor" format="color"/>
+        <!--右文本颜色-->
+        <attr name="sub_rightTextColor" format="color"/>
+        <!--右边文本提示颜色-->
+        <attr name="sub_rightHintTextColor" format="color"/>
+        <!--右边文本提示-->
+        <attr name="sub_rightHintText" format="string"/>
+        <!--左文本样式-->
+        <attr name="sub_leftTextStyle" format="enum">
+            <enum name="bold" value="0"/>
+            <enum name="normal" value="1"/>
+        </attr>
+        <!--右文本样式-->
+        <attr name="sub_rightTextStyle" format="enum">
+            <enum name="bold" value="0"/>
+            <enum name="normal" value="1"/>
+        </attr>
+        <!--下边分割线高度-->
+        <attr name="sub_driverHeight" format="dimension"/>
+        <!--分割线颜色-->
+        <attr name="sub_driverColor" format="color"/>
+        <!--分割线左边距-->
+        <attr name="sub_leftDriverMargin" format="dimension"/>
+        <!--分割线右边距-->
+        <attr name="sub_rightDriverMargin" format="dimension"/>
+        <!--左图标和文本的间距-->
+        <attr name="sub_leftDrawablePadding" format="dimension"/>
+        <!--右图标和文本的间距-->
+        <attr name="sub_rightDrawablePadding" format="dimension"/>
+    </declare-styleable>
+
+
+    <declare-styleable name="NumberPickerView">
+        <!--set number of item displayed, default is 3-->
+        <attr name="npv_ShowCount" format="reference|integer" />
+        <!--set if show divider, default is true-->
+        <attr name="npv_ShowDivider" format="reference|boolean" />
+        <attr name="npv_DividerColor" format="reference|color" />
+        <attr name="npv_DividerMarginLeft" format="reference|dimension" />
+        <attr name="npv_DividerMarginRight" format="reference|dimension" />
+        <attr name="npv_DividerHeight" format="reference|dimension" />
+        <attr name="npv_TextColorNormal" format="reference|color" />
+        <attr name="npv_TextColorSelected" format="reference|color" />
+        <attr name="npv_TextColorHint" format="reference|color" />
+        <attr name="npv_TextSizeNormal" format="reference|dimension" />
+        <attr name="npv_TextSizeSelected" format="reference|dimension" />
+        <attr name="npv_TextSizeHint" format="reference|dimension" />
+        <attr name="npv_TextArray" format="reference" />
+        <attr name="npv_MinValue" format="reference|integer" />
+        <attr name="npv_MaxValue" format="reference|integer" />
+        <attr name="npv_WrapSelectorWheel" format="reference|boolean" />
+        <attr name="npv_RespondChangeOnDetached" format="reference|boolean" />
+        <attr name="npv_HintText" format="reference|string" />
+        <attr name="npv_EmptyItemHint" format="reference|string" />
+        <attr name="npv_MarginStartOfHint" format="reference|dimension" />
+        <attr name="npv_MarginEndOfHint" format="reference|dimension" />
+        <attr name="npv_ItemPaddingHorizontal" format="reference|dimension" />
+        <attr name="npv_ItemPaddingVertical" format="reference|dimension" />
+        <attr name="npv_RespondChangeInMainThread" format="reference|boolean" />
+        <attr name="npv_TextEllipsize" format="reference|string" />
+
+        <!--just used to measure maxWidth for wrap_content without hint,
+            the string array will never be displayed.
+            you can set this attr if you want to keep the wraped numberpickerview
+            width unchanged when alter the content list-->
+        <attr name="npv_AlternativeTextArrayWithMeasureHint" format="reference" />
+        <attr name="npv_AlternativeTextArrayWithoutMeasureHint" format="reference" />
+        <!--the max length of hint content-->
+        <attr name="npv_AlternativeHint" format="reference|string" />
+    </declare-styleable>
+
+
+    <!--可扩展收缩的文本-->
+    <declare-styleable name="ExpandableTextView">
+        <!--保留的行数-->
+        <attr name="ep_max_line" format="integer" />
+        <!--是否需要展开-->
+        <attr name="ep_need_expand" format="boolean" />
+        <!--是否需要收起 这个是建立在开启展开的基础上的-->
+        <attr name="ep_need_contract" format="boolean" />
+        <!--是否需要@用户 -->
+        <attr name="ep_need_mention" format="boolean" />
+        <!--是否需要对链接进行处理 -->
+        <attr name="ep_need_link" format="boolean" />
+        <!--是否需要动画-->
+        <attr name="ep_need_animation" format="boolean" />
+        <!--是否需要永远将展开或者收回放置在最后边-->
+        <attr name="ep_need_always_showRight" format="boolean" />
+        <!--是否需要自定义规则-->
+        <attr name="ep_need_self" format="boolean" />
+        <!--收起的文案-->
+        <attr name="ep_contract_text" format="string" />
+        <!--展开的文案-->
+        <attr name="ep_expand_text" format="string" />
+        <!--展开的文字的颜色-->
+        <attr name="ep_expand_color" format="color" />
+        <!--收起的文字的颜色-->
+        <attr name="ep_contract_color" format="color" />
+        <!--在收回和展开前面添加的内容的字体颜色-->
+        <attr name="ep_end_color" format="color" />
+        <!--链接的文字的颜色-->
+        <attr name="ep_link_color" format="color" />
+        <!--@用户的文字的颜色-->
+        <attr name="ep_mention_color" format="color" />
+        <!--自定义规则的文字的颜色-->
+        <attr name="ep_self_color" format="color" />
+        <!--链接的图标-->
+        <attr name="ep_link_res" format="reference" />
+    </declare-styleable>
+
+</resources>
