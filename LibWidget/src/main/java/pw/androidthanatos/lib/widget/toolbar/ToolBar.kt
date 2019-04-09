@@ -98,14 +98,6 @@ class ToolBar: ViewGroup {
         initRightView()
         initTitleView()
         initDriverVIew()
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
-            if (elevation > 0){
-                if (null == background){
-                    setBackgroundColor(resources.getColor(R.color.colorPrimary))
-                }
-            }
-
-        }
     }
 
     /**
