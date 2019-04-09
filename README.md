@@ -4,5 +4,5 @@
 
 
 ```
-implementation 'com.github.waws80:AndroidLibWidget:1.0.0'
+implementation 'com.github.waws80:AndroidLibWidget:1.0.1'
 ```
